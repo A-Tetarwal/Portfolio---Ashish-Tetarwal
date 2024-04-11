@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(255, 255, 238, 0.949);
+    background-color: black;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#content{
+    /* height: 110px;
+    width: 300px; */
+    background-color: black;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    border-radius: 4px;
+    font-size: larger;
+}
+#content h1{
+    user-select: none;
+}
+#content button{
+    background-color: rgba(255, 255, 238, 0.949);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    user-select: none;
+}
+#content button:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 238, 0.45);
+    animation: button 0.4s ease-in-out 0s 1 normal;
+}
+/* button animation */
+@keyframes button {
+    from{scale: 0.95;}
+    to{scale: 1;}
+}
+/* #content p{
+    font-size: 400px;
+} */
+
+#logo{
+    background-color: rgba(255, 255, 238, 0.949);
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 100px;
+    top: 60px;
+    border-radius: 50%;
+    scale: 1.5;
+    z-index: 1;
+}
+/* #logo:hover{
+    scale: 1.5;
+} */
+#logo img{
+    /* width: 105px; h:w (ratio for this logo img) - 4:3 */
+    /* and background-color of this logo img is - rgba(255, 255, 238, 0.949) */
+    /* height: 60vh; */
+    height: 300px;
+    position: absolute;
+    /* right: 200px;
+    top: 100px; */
+    top: 40px;
+    /* right: 43.25px; */
+    right: 84px;
+    /* padding: 10px; */
+    background-color: rgba(255, 255, 238, 0.949);
+    border-radius: 1.7px;
+    margin: 4px;
+    z-index: 1;
+}
+
+/* strip1 style */
+#stipContainer{
+    overflow: hidden;
+}
+#strip1{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 75%;
+    border-top: 1px solid rgba(255, 255, 238, 0.949);
+    border-bottom: 1px solid rgba(255, 255, 238, 0.949);
+    font-size: small;
+    user-select: none;
+
+    position: absolute;
+    top: 70vh;
+    z-index: 0;
+    /* transform: rotate(-6deg); */
+    rotate: z -6deg;
+    animation: slideStrip 20s linear infinite;
+}
+#strip1 p{
+    color: rgba(255, 255, 238, 0.949);
+}
+#strip1 img{
+    height: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    z-index: 0;
+}
+@keyframes slideStrip {
+    0% {
+      transform: translateX(0%); /* Start from outside right of strip-container */
+    }
+    100% {
+      transform: translateX(-100%); /* End outside left of strip-container */
+    }
+}
+
+/* strip2 */
+#strip2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 75%;
+    border-top: 1px solid rgba(255, 255, 238, 0.949);
+    border-bottom: 1px solid rgba(255, 255, 238, 0.949);
+    font-size: small;
+    user-select: none;
+
+    position: absolute;
+    top: 70vh;
+    z-index: 0;
+    /* transform: rotate(-6deg); */
+    rotate: z 6deg;
+    animation: slideStrip 20s linear infinite;
+}
+#strip2 p{
+    color: rgba(255, 255, 238, 0.949);
+}
+#strip2 img{
+    height: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    z-index: 0;
+}
+@keyframes slideStrip {
+    0% {
+      transform: translateX(0%); /* Start from outside right of strip-container */
+    }
+    100% {
+      transform: translateX(-100%); /* End outside left of strip-container */
+    }
+}
+
+/* nothing1 div */
+#nothing1{
+    height: 135vh;
+    width: 100%;
+}
+
+/* nav bar */
+#nav{
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 13vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+nav ul {
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+
+}
+nav ul li {
+    list-style-type: none;
+}
+/* nav buttons */
+nav ul li button{
+    /* background-color: rgba(255, 255, 238, 0.949); */
+    /* color: black; */
+    background-color: rgb(29, 29, 29);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    /* border: 1px solid rgba(255, 255, 238, 0.949); */
+    user-select: none;
+}
+nav ul li button:hover{
+    background-color: rgba(255, 255, 238, 0.949);
+    color: black;
+    box-shadow: 0 0 30px rgba(255, 255, 238, 0.45);
+    /* animation: button 0.4s ease-in-out 0s 1 normal; */
+}
+#aboutBtn {
+    background-color: rgba(255, 255, 238, 0.949);
+    color: black;
+} 
+
+/* About Section */
+#aboutMe {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: 80vw;
+    margin-left: 10vw;
+    padding: 40px 0 40px 0;
+    box-shadow: 0 0 70px rgba(255, 255, 238, 0.45);
+}
+#aboutMe h1 {
+    user-select: none;
+}
+
+/* Contact section */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    user-select: none;
+}
+#contact ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact ul li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+#linkedin {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+#linkedin img {
+    height: 20px;
+    background-color: white;
+    margin-right: 3px;
+}
+#linkedin:hover {
+    animation: button 0.4s ease-in-out 0s 1 normal;
+}
+#gmail {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+#gmail img {
+    height: 20px;
+    background-color: white;
+    margin-right: 3px;
+}
+#gmail:hover {
+    animation: button 0.4s ease-in-out 0s 1 normal;
+}
+#github {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+#github img {
+    height: 20px;
+    background-color: white;
+    margin-right: 3px;
+}
+#github:hover {
+    animation: button 0.4s ease-in-out 0s 1 normal;
+}
+#twitter {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+#twitter img {
+    height: 20px;
+    background-color: white;
+    margin-right: 3px;
+}
+#twitter:hover {
+    animation: button 0.4s ease-in-out 0s 1 normal;
+}
+
+
+/* style for active state of buttons */
+/* .active {
+    background-color: rgba(255, 255, 238, 0.949);
+    color: black;
+} */
