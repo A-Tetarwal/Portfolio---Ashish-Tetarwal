@@ -24,10 +24,6 @@ This repository contains the files for my portfolio website.
 - `twitterx.svg`: SVG file for Twitter icon used in the portfolio.
 - `soft-star-1.svg`: SVG file for a star icon used in the portfolio.
 
-## Latest Commit
-
-- `A-Tetarwal` made the latest commit with the message "update README.md"  approximately 8 minutes after first commit with message "added portfolio" (commit hash: `f996f63`).
-
 ## History
 
 The portfolio files were added by `A-Tetarwal` in the latest commit.
