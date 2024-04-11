@@ -26,7 +26,7 @@ This repository contains the files for my portfolio website.
 
 ## Latest Commit
 
-- `A-Tetarwal` made the latest commit with the message "added portfolio" (commit hash: `f996f63`) approximately 2 minutes ago.
+- `A-Tetarwal` made the latest commit with the message "added README.md"  approximately 6 minutes after first commit with message "added portfolio" (commit hash: `f996f63`).
 
 ## History
 
