@@ -45,9 +45,13 @@ body::-webkit-scrollbar {
     from{scale: 0.95;}
     to{scale: 1;}
 }
-/* #content p{
-    font-size: 400px;
-} */
+#proceedButton {
+    position: absolute; /* Adjust positioning as needed */
+    top: 135px; /* Adjust top position as needed */
+    left: 0px; /* Adjust left position as needed */
+    z-index: 1; /* Ensure the button appears above other content */
+}
+
 
 #logo{
     background-color: rgba(255, 255, 238, 0.949);
